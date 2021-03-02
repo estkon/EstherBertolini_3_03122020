@@ -1,0 +1,19 @@
+{
+  "name": "estherbertolini_3_03122020",
+  "version": "1.0.0",
+  "description": "Projet n°3: Dynamisez une page web avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estkon/EstherBertolini_3_03122020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estkon/EstherBertolini_3_03122020/issues"
+  },
+  "homepage": "https://github.com/estkon/EstherBertolini_3_03122020#readme"
+}
