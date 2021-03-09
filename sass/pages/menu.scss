@@ -62,6 +62,10 @@
         }
             h3{
                 white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 15px 0px; 
+                margin-right:30px;
             }           
             
 }
