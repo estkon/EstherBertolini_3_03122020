@@ -55,12 +55,9 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis; 
-            &:hover{
-                width:30%;
-            }
         }
         &--prix p{
-            padding-right: 60px;
+            padding-right: 30px;
         }
             h3{
                 white-space: nowrap;
@@ -77,7 +74,7 @@
         padding: 0 40px 0 40px;
         margin-right: -120px;
         display: flex;
-        
+        transition: margin-right 0.3s ;
         
         
     

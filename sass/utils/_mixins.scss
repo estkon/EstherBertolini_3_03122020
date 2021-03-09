@@ -1,5 +1,6 @@
 @mixin carte-menu {
-    background-color: white;
+    cursor: url('../../images/logo/curseur.cur'),pointer;
+    background-color:white;
     display: flex;
     justify-content: space-between;
     width:95%;
@@ -8,7 +9,7 @@
     margin-bottom: 20px;
     padding-left: 15px;  
     overflow: hidden;
-    cursor: url("images/logo/cursor.cur"), auto;
+    
     &:hover .anim-menu__proposition--plat p{
         width:80%;
     }

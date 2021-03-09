@@ -12,7 +12,7 @@ header{
         justify-content: center;
         background-color: $colour-back;
         padding: 10px;
-        box-shadow: 0px 2px 6px gray inset;
+        box-shadow: 0px 4px 6px lightgray inset;
         padding-left: 70px;
         p{
             padding-right: 10px;
@@ -29,9 +29,9 @@ header{
         }
     }
     .presentation{
-        background-color:#E0E0E0 ;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        background-color:#f6f6f6 ;
+        padding-top: 30px;
+        padding-bottom: 60px;
     }
     
 }

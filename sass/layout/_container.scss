@@ -37,9 +37,18 @@
          &__textandheart{
             display: flex;
             justify-content: space-between;
-            margin: -15px 0px 0px 20px;    
+            margin: -15px 0px 0px 20px; 
+            &--texte{
+                padding-top: 15px;
+                & p{
+                    font-size: 20px;
+                    line-height: 0;
+                    font-weight: 100;
+                }
+                }
+            }   
             }
-        }
+        
     
 
     

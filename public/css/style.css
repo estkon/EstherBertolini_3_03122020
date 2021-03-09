@@ -36,8 +36,23 @@
   animation-iteration-count: 1;
 }
 
+.anim-menu li:nth-child(4) {
+  animation: anim-menu 4s linear;
+}
+.anim-menu li:nth-child(4):hover .check {
+  animation: check-gliss 700ms linear;
+  margin-right: 0px;
+}
+.anim-menu li:nth-child(4):hover .check i {
+  animation: icone-rotate ease 0.5s;
+  animation-iteration-count: 1;
+}
+
 @keyframes anim-menu {
   0% {
+    opacity: 0%;
+  }
+  50% {
     opacity: 0%;
   }
   100% {
@@ -49,7 +64,7 @@
     transform: translateX(10px);
   }
   50% {
-    transform: translateX(px);
+    transform: translateX(1px);
   }
   100% {
     transform: translateX(0);
@@ -64,7 +79,7 @@
   }
 }
 html {
-  background-color: black;
+  background-color: darkgrey;
 }
 
 body {
@@ -74,19 +89,23 @@ body {
   width: 100%;
   margin: auto;
   max-width: 600px;
-  cursor: url("./cursor.png"), auto;
 }
 
 .presentation h1 {
   display: block;
 }
 
-h1 {
+h1, h2 {
   font-family: "Roboto";
   display: flex;
   margin-left: 20px;
   font-size: 30px;
   font-weight: 700;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 0.2;
 }
 
 .presentation p {
@@ -106,7 +125,7 @@ a {
   border-radius: 10rem;
   cursor: pointer;
   overflow: hidden;
-  padding: 15px 30px;
+  padding: 20px 30px;
   transition: transform 450ms, background-color 300ms 150ms;
   color: white;
   font-family: "roboto";
@@ -120,15 +139,18 @@ a {
 
 .fonctionnement__btn {
   display: flex;
+  align-items: center;
   margin: auto;
   width: 80%;
   height: 60px;
-  padding-top: 20px;
+  padding: 10px;
   border-radius: 1.5em;
-  box-shadow: 0px 5px 10px lightgray;
+  box-shadow: 0px 5px 10px #eaeaea;
   margin-bottom: 20px;
   background-color: #f5f1f1;
-  font-family: "robotobold";
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 500;
   border: none;
 }
 .fonctionnement__btn:hover i {
@@ -153,11 +175,16 @@ a {
 .restaurants__textandheart--btn {
   background-color: transparent;
   border: none;
-  font-size: 30px;
-  margin-top: 0px;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 0.292em;
+  margin-top: 1em;
   margin-right: 10px;
 }
 .restaurants__textandheart--btn:hover i {
+  animation: anim-menu 0.7s ease-in-out;
+  transition: font-weight 0.3s;
   font-weight: 900;
   color: #FF79DA;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
@@ -178,16 +205,16 @@ header .logo {
 header form {
   display: flex;
   justify-content: center;
-  background-color: #BFBFBF;
+  background-color: #eaeaea;
   padding: 10px;
-  box-shadow: 0px 2px 6px gray inset;
+  box-shadow: 0px 4px 6px lightgray inset;
   padding-left: 70px;
 }
 header form p {
   padding-right: 10px;
 }
 header form input {
-  background-color: #BFBFBF;
+  background-color: #eaeaea;
   border: none;
   font-size: large;
 }
@@ -196,9 +223,9 @@ header form input::placeholder {
   opacity: 1;
 }
 header .presentation {
-  background-color: #E0E0E0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: #f6f6f6;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 .container {
@@ -242,10 +269,18 @@ header .presentation {
   justify-content: space-between;
   margin: -15px 0px 0px 20px;
 }
+.restaurants__textandheart--texte {
+  padding-top: 15px;
+}
+.restaurants__textandheart--texte p {
+  font-size: 20px;
+  line-height: 0;
+  font-weight: 100;
+}
 
 footer {
   background-color: black;
-  padding: 20px;
+  padding: 20px 50px;
 }
 footer img {
   filter: invert(100%);
@@ -323,6 +358,7 @@ footer img {
 }
 
 .anim-menu__proposition {
+  cursor: url("../../images/logo/curseur.cur"), pointer;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -332,7 +368,6 @@ footer img {
   margin-bottom: 20px;
   padding-left: 15px;
   overflow: hidden;
-  cursor: url("images/logo/cursor.cur"), auto;
 }
 .anim-menu__proposition:hover .anim-menu__proposition--plat p {
   width: 80%;
@@ -348,11 +383,8 @@ footer img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.anim-menu__proposition--plat p:hover {
-  width: 30%;
-}
 .anim-menu__proposition--prix p {
-  padding-right: 60px;
+  padding-right: 30px;
 }
 .anim-menu__proposition h3 {
   white-space: nowrap;
@@ -366,6 +398,7 @@ footer img {
   padding: 0 40px 0 40px;
   margin-right: -120px;
   display: flex;
+  transition: margin-right 0.3s;
 }
 .check i {
   color: white;
