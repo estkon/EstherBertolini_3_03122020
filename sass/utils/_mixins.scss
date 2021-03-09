@@ -10,9 +10,11 @@
     padding-left: 15px;  
     overflow: hidden;
     
-    &:hover .anim-menu__proposition--plat p{
-        width:80%;
+    &:hover .anim-menu__proposition--plat{
+        width:60%;
+        padding-right:1em;
     }
+   
 }
 @mixin menu-h2 {
     font-family: 'robotolight';
