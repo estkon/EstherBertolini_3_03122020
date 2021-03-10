@@ -59,6 +59,17 @@
     opacity: 100%;
   }
 }
+@keyframes opacity-heart {
+  0% {
+    opacity: 40%;
+  }
+  50% {
+    opacity: 70%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 @keyframes check-gliss {
   0% {
     transform: translateX(10px);
@@ -183,7 +194,7 @@ a {
   margin-right: 10px;
 }
 .restaurants__textandheart--btn:hover i {
-  animation: anim-menu 0.7s ease-in-out;
+  animation: opacity-heart 0.7s ease-in-out;
   transition: font-weight 0.3s;
   font-weight: 900;
   color: #FF79DA;

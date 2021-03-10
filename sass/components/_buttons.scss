@@ -63,7 +63,7 @@
     
         &:hover{
             i{
-            animation: anim-menu 0.7s ease-in-out;
+            animation: opacity-heart 0.7s ease-in-out;
             transition: font-weight 0.3s ;
             font-weight: 900;
             color:$colour-secondary;
