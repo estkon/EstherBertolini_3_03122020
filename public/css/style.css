@@ -115,11 +115,6 @@ h2 {
   font-weight: 700;
 }
 
-h3 {
-  font-size: 20px;
-  line-height: 0.2;
-}
-
 .presentation p {
   font-family: "Roboto";
   font-size: 1.5em;
@@ -288,6 +283,10 @@ header .presentation {
   font-size: 20px;
   line-height: 0;
   font-weight: 100;
+}
+.restaurants__textandheart--texte h3 {
+  font-size: 30px;
+  line-height: 0.2;
 }
 
 footer {
