@@ -1,55 +1,63 @@
-   .anim-menu li:nth-child(1) {
-        animation: anim-menu 1s linear;
-        @include animation-icone;
-        }
-      
-      .anim-menu li:nth-child(2) {
-        animation: anim-menu 2s linear;
-        @include animation-icone;
-        }
+.anim-menu li:nth-child(1) {
+  animation: anim-menu 1s linear;
+  @include animation-icone;
+}
 
-      
-      .anim-menu li:nth-child(3) {
-        animation: anim-menu 3s linear;
-        @include animation-icone;
-        }
+.anim-menu li:nth-child(2) {
+  animation: anim-menu 2s linear;
+  @include animation-icone;
+}
 
-      .anim-menu li:nth-child(4) {
-          animation: anim-menu 4s linear;
-          @include animation-icone;
-          }
-      
-      
-@keyframes anim-menu{
-     0% {
-    opacity: 0% ;
-    }
-    50%{
-      opacity: 0% ;
-      }
-    100% {
-      opacity:100% ;
-    }
+.anim-menu li:nth-child(3) {
+  animation: anim-menu 3s linear;
+  @include animation-icone;
+}
+
+.anim-menu li:nth-child(4) {
+  animation: anim-menu 4s linear;
+  @include animation-icone;
+}
+
+@keyframes anim-menu {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes opacity-heart {
+  0% {
+    opacity: 40%;
+  }
+  50% {
+    opacity: 70%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 @keyframes check-gliss {
-    0% {
-        transform: translateX(10px);
-    }
-    50% {
-      transform: translateX(1px);
+  0% {
+    transform: translateX(10px);
   }
-    100% {
-        transform: translateX(0);
-    }
+  50% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-  
-  @keyframes icone-rotate{
-    0% {
-      transform:  rotate(0deg) ;
-    }
-    100% {
-      transform:  rotate(380deg) ;
-    }
+@keyframes icone-rotate {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(380deg);
+  }
+}

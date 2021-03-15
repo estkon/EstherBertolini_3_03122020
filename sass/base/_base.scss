@@ -1,38 +1,39 @@
-html{
-    background-color: darkgrey;
+html {
+  background-color: darkgrey;
 }
-body{
-    background-color: white;
-    padding-top: 15px;
-    font-family: 'Roboto';
-    width: 100%;
-    margin: auto;
-    max-width: 600px;
+body {
+  background-color: white;
+  padding-top: 15px;
+  font-family: "Roboto";
+  width: 100%;
+  margin: auto;
+  max-width: 600px;
 }
 .presentation h1 {
-    display: block;
+  display: block;
 }
 
-h1,h2{
-	font-family: 'Roboto';
-    display:flex;
-    margin-left: 20px;
-    font-size: 30px;
-    font-weight: 700;
+h1,
+h2 {
+  font-family: "Roboto";
+  display: flex;
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
-h3{
-    font-size: 30px;
-    line-height: 0.2;
+h3 {
+  font-size: 30px;
+  line-height: 0.2;
 }
 
-.presentation p{
-    font-family: 'Roboto';
-    font-size: 1.5em;
-    color:grey;
-    font-weight: 300;
+.presentation p {
+  font-family: "Roboto";
+  font-size: 1.5em;
+  color: grey;
+  font-weight: 300;
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
