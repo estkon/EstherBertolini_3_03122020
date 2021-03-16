@@ -1,0 +1,13 @@
+$colour-primary: #9356dc;
+$colour-secondary: #ff79da;
+$colour-tertiary: #99e2d0;
+$colour-back: #eaeaea;
+$gradient: linear-gradient(
+  lighten($colour-secondary, 8) 0%,
+  darken($colour-primary, 10) 100%
+);
+/*loading spinner*/
+$num-bars: 5;
+$size: 3vh;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur/$num-bars;

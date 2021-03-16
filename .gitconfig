@@ -1,0 +1,5 @@
+[user]
+	name = Esther
+	email = esther.kondratieff@gmail.com
+[core]
+	longpaths = true

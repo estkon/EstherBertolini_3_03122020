@@ -1,0 +1,156 @@
+/*appariton progressive menu*/
+
+.anim-menu li:nth-child(1) {
+  animation: anim-menu 1s linear;
+  @include animation-icone;
+}
+
+.anim-menu li:nth-child(2) {
+  animation: anim-menu 2s linear;
+  @include animation-icone;
+}
+
+.anim-menu li:nth-child(3) {
+  animation: anim-menu 3s linear;
+  @include animation-icone;
+}
+
+.anim-menu li:nth-child(4) {
+  animation: anim-menu 4s linear;
+  @include animation-icone;
+}
+
+@keyframes anim-menu {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/*coeurs opacité*/
+
+@keyframes opacity-heart {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 30%;
+  }
+  80%{
+    opacity: 50%;
+  }
+  90%{
+    opacity:70%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/*animation plat check*/
+
+@keyframes check-gliss {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes icone-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(380deg);
+  }
+}
+/*looding-spinner*/
+.content{
+  animation: load-spinner 3s  ease-in-out forwards;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  p{
+  font-family:"shrikhand";
+  font-size: 4.5vh;
+  color: $colour-secondary;
+  text-shadow: -5px 5px $colour-tertiary;
+  &:hover{
+    color: $colour-primary;
+    text-shadow: -5px 5px $colour-secondary;
+  }
+}
+}
+.content-load{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load {
+  width: $size*10;
+  height: $size*7.5;
+  display: flex;
+  justify-content: space-evenly;
+  &__bar {
+      background:-webkit-linear-gradient($colour-primary,$colour-secondary);
+      height: 100%;
+      width: $size;
+      animation: bars $anim-dur backwards infinite ease-in-out alternate;
+      @for $i from 1 through $num-bars {
+          &--#{$i} {
+              animation-delay: $anim-delay * $i;
+              &:hover{
+                background:-webkit-linear-gradient($colour-secondary,$colour-tertiary);
+              }
+           }
+           &--#{$i}-inv {
+            animation-delay: $anim-delay * $i;
+            animation-direction: alternate-reverse;
+            background:-webkit-linear-gradient($colour-secondary,$colour-tertiary);
+              &:hover {
+              background:-webkit-linear-gradient($colour-secondary,$colour-primary);
+            }
+        }
+      }
+  }
+}
+
+@keyframes bars {
+  0% {
+      transform: scaleY(0.5);
+  }
+  100% {
+      transform: scaleY(1.0);
+  }
+}
+/* appariton index*/
+
+@keyframes load-spinner{
+  0%{
+    opacity: 1;
+  }
+  
+  100%{
+    opacity: 0;
+  }
+}
