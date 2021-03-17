@@ -36,19 +36,30 @@
 
 @keyframes opacity-heart {
   0% {
-    opacity: 0%;
+    background:-webkit-linear-gradient(#9356dc1c, #ff79d91c);
+    -webkit-background-clip: text;
+    background-clip: text;
   }
   50% {
-    opacity: 30%;
+    background:-webkit-linear-gradient(#9256dc3a, #ff79da3a);
+    -webkit-background-clip: text;
+      background-clip: text;
   }
   80%{
-    opacity: 50%;
+    background:-webkit-linear-gradient(#9256d969, #ff79d969);
+    -webkit-background-clip: text;
+      background-clip: text;
   }
   90%{
-    opacity:70%;
+    background:-webkit-linear-gradient(#9256dcc7, #ff79d9c7);
+    -webkit-background-clip: text;
+      background-clip: text;
   }
   100% {
-    opacity: 100%;
+    background:-webkit-linear-gradient(#9356da, #ff79da);
+    -webkit-background-clip: text;
+      background-clip: text;
+    
   }
 }
 
@@ -82,14 +93,16 @@
   align-items: center;
   flex-direction: column;
   background-color: white;
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
+  margin :0;
+  padding: 0;
   height: 100%;
-  p{
+  width: 100%;
+  position: fixed;
+    p{
   font-family:"shrikhand";
   font-size: 4.5vh;
   color: $colour-secondary;
@@ -148,9 +161,11 @@
 @keyframes load-spinner{
   0%{
     opacity: 1;
+    z-index: 1300;
   }
   
   100%{
     opacity: 0;
+    z-index: -1;
   }
 }

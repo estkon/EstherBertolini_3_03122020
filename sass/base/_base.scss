@@ -5,9 +5,7 @@ body {
   background-color: white;
   padding-top: 15px;
   font-family: "Roboto";
-  width: 100%;
   margin: auto;
-  max-width: 600px;
 }
 .presentation h1 {
   display: block;
@@ -21,11 +19,9 @@ h2 {
   font-size: 30px;
   font-weight: 700;
 }
-h2{
+h2 {
   padding-left: 1em;
 }
-
-
 
 .presentation p {
   font-family: "Roboto";
@@ -36,4 +32,106 @@ h2{
 a {
   text-decoration: none;
   color: black;
+}
+/*medias queries*/
+
+@media only screen and (max-width: 320px) {
+  /*style petits smartphones en voie de disparition*/
+  body {
+    width: 100%;
+  }
+  .restaurants {
+    width: 90%;
+  }
+  .anim-menu {
+    margin-left: -40px;
+  }
+  .restaurants__textandheart--texte h3 {
+    line-height: 1.1;
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 799px) {
+  /*style smartphones et petites tablettes en portrait*/
+  body,
+  .header__img {
+    width: 100%;
+  }
+  .restaurants {
+    width: 90%;
+  }
+  .anim-menu {
+    margin-left: -40px;
+  }
+  .fonctionnement__btn {
+    width: 80%;
+  }
+  .restaurants__textandheart--texte h3 {
+    line-height: 1.1;
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 966px) {
+  /*style petites-moyennes tablettes */
+  body,
+  .header__img {
+    width: 80%;
+  }
+  .restaurants {
+    width: 90%;
+  }
+  .anim-menu {
+    margin-left: -40px;
+  }
+  .restaurants__textandheart--btn {
+    margin-right: 10px;
+  }
+  .fonctionnement__btn {
+    width: 80%;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 0.2;
+  }
+}
+@media (min-width: 966px) {
+  /*style desktop */
+  body,
+  .header__img {
+    width: 90%;
+  }
+  .restaurants {
+    width: 45%;
+  }
+  .media-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-texte {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fonctionnement__btn {
+    width: 35%;
+  }
+  .anim-menu {
+    margin-left: 40px;
+    margin-top: 40px;
+    &__proposition {
+      width: 90%;
+    }
+    .restaurants__textandheart--btn {
+      margin-right: 10px;
+    }
+  }
+  .titre h1 {
+    padding-left: 60px;
+  }
+  .restaurants__textandheart--btn {
+    margin-right: 60px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 0.2;
+  }
 }

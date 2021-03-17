@@ -5,7 +5,6 @@
 }
 
 .restaurants {
-  width: 90%;
   margin: auto;
   box-shadow: 6px 6px 6px gray;
   border-radius: 20px;
@@ -45,11 +44,6 @@
         line-height: 0;
         font-weight: 100;
       }
-      & h3{
-          font-size: 30px;
-          line-height: 0.2;
-        }
-      }
     }
   }
-
+}

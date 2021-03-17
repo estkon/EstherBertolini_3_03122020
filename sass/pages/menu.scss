@@ -1,9 +1,9 @@
 .header {
   &__img {
     position: absolute;
-    max-width: 600px;
     img {
       width: 100%;
+      object-fit: cover;
     }
   }
   &__return-logo {
@@ -42,7 +42,6 @@
   }
 }
 .anim-menu {
-  margin-left: -40px;
   display: flex;
   flex-direction: column;
 }
