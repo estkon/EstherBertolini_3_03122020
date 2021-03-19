@@ -393,6 +393,10 @@ a {
     width: 90%;
   }
 
+  .menu_contenu .titre {
+    padding-right: 6%;
+  }
+
   .restaurants {
     width: 45%;
   }
@@ -427,7 +431,7 @@ a {
   }
 
   .restaurants__textandheart--btn {
-    margin-right: 85px;
+    margin-right: 0px;
   }
 
   h3 {
