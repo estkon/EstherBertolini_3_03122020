@@ -307,6 +307,18 @@ a {
     line-height: 1.1;
     font-size: 22px;
   }
+
+  .content {
+    text-align: center;
+    font-size: 2.5vh;
+  }
+
+  .load {
+    width: 17vh;
+  }
+  .load__bar {
+    width: 2vh;
+  }
 }
 @media only screen and (min-width: 321px) and (max-width: 799px) {
   /*style smartphones et petites tablettes en portrait*/
@@ -330,6 +342,20 @@ a {
   .restaurants__textandheart--texte h3 {
     line-height: 1.1;
     font-size: 22px;
+  }
+
+  .content {
+    text-align: center;
+  }
+  .content p {
+    font-size: 2.5vh;
+  }
+
+  .load {
+    width: 17vh;
+  }
+  .load__bar {
+    width: 2vh;
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 966px) {
